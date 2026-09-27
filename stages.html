@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages — Aïkido Club de Mignovillard</title>
+    <meta name="description" content="Aïkido Club de Mignovillard — cours d'aïkido dans le Jura, dès 12 ans, débutants bienvenus, deux séances d'essai gratuites.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo_petit.jpeg" alt="Aïkido Club de Mignovillard"></a>
+        <button class="burger" id="burger-btn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <a href="a-propos.html">À propos</a>
+            <a href="philosophie.html">Philosophie</a>
+            <a href="enseignants.html">Enseignants</a>
+            <a href="stages.html" class="active">Stages</a>
+            <a href="infos-pratiques.html">Infos pratiques</a>
+            <a href="contact.html" class="btn-primary">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="workshops-hero">
+            <div class="section-header">
+                <p class="eyebrow-dark">Stages</p>
+                <h1>Approfondir sa pratique, au-delà des cours hebdomadaires.</h1>
+                <p>En complément des cours du lundi et du mercredi, le club participe et organise ponctuellement des stages, seul ou avec d'autres clubs de la FAT.</p>
+            </div>
+            <img src="images/tatami.jpg" alt="Tatami installé pour un stage, avec le portrait de Maître Ueshiba en fond de salle">
+        </section>
+
+        <section id="workshop-types">
+            <div class="section-header">
+                <p class="eyebrow-dark">Types de stages</p>
+                <h2>Plusieurs formats, pour tous les niveaux.</h2>
+            </div>
+            <div class="card-group">
+                <div class="card card-photo card-photo-interclub">
+                    <p class="card-icon">集</p>
+                    <div class="card-text">
+                        <h3>Stages inter-clubs</h3>
+                        <p>Des rencontres avec d'autres dojos du Jura et de la FAT, l'occasion de pratiquer avec de nouveaux partenaires.</p>
+                    </div>
+                </div>
+                <div class="card card-photo card-photo-armes">
+                    <p class="card-icon">剣</p>
+                    <div class="card-text">
+                        <h3>Stages armes</h3>
+                        <p>Des sessions dédiées au travail du bokken, du jō et du tantō, pour approfondir cet aspect de la pratique.</p>
+                    </div>
+                </div>
+                <div class="card card-photo card-photo-grades">
+                    <p class="card-icon">位</p>
+                    <div class="card-text">
+                        <h3>Préparation aux grades</h3>
+                        <p>Des stages ciblés pour préparer sereinement les passages de grade au sein de la fédération.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="upcoming">
+            <div class="section-header">
+                <p class="eyebrow-dark">Stages à venir</p>
+                <h2>Le calendrier des prochains stages.</h2>
+                <p>Les dates de stages sont publiées régulièrement. Retrouvez le calendrier des stages nationaux de la Fédération d'Aïkido Traditionnelle sur <a class="tlink-dark" href="https://www.aikido-fat.com/calendrier.php" target="_blank" rel="noopener">le site de la FAT</a>, pour les horaires, contactez-nous directement.</p>
+            </div>
+            <!-- Dates chargées depuis le Google Sheet publié (voir script.js) -->
+            <div class="stages-calendar" id="stages-calendar" data-csv="https://docs.google.com/spreadsheets/d/e/2PACX-1vSYaIJRWjyX3SgQWxrJr0JXhfP_H58-IHKt56axDLU6xq8p3JLO09j1EE5SL4LbI5WSB8i_--uXQHLi/pub?gid=0&single=true&output=csv" hidden>
+                <div class="stages-table-wrap">
+                    <table class="stages-table">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item faq-static" id="stages-empty">
+                    <p><strong>Prochaines dates à confirmer</strong> — contactez le club pour ses prochaines dates, ou consultez <a class="tlink-dark" href="https://www.aikido-fat.com/calendrier.php" target="_blank" rel="noopener">le site de la FAT</a> pour le calendrier des stages nationaux à venir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="past">
+            <div class="section-header">
+                <p class="eyebrow-dark">Stages passés</p>
+                <h2>Quelques temps forts du club.</h2>
+                <p>Le club a accueilli son premier stage inter-clubs sur le Plateau de Nozeroy, une belle occasion de partager la pratique avec d'autres dojos de la région.</p>
+            </div>
+            <!-- Photos chargées depuis le dossier Google Drive partagé (voir script.js) -->
+            <div class="carousel" id="past-carousel" data-folder="1clJJF8wVRQJIHb_IvEf_VWEFgRvJNELg" data-key="AIzaSyCPHMZGisLJ1MKD7g8DB5Eudk2wX1ibADA" aria-roledescription="carrousel" aria-label="Photos des stages passés" hidden>
+                <div class="carousel-viewport">
+                    <div class="carousel-track"></div>
+                    <button type="button" class="carousel-btn carousel-prev" aria-label="Photo précédente">‹</button>
+                    <button type="button" class="carousel-btn carousel-next" aria-label="Photo suivante">›</button>
+                </div>
+                <div class="carousel-footer">
+                    <p class="carousel-caption"></p>
+                    <p class="carousel-counter" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="workshops-faq">
+            <div class="section-header">
+                <p class="eyebrow-dark">FAQ</p>
+                <h2>Questions fréquentes sur les stages.</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Les stages sont-ils réservés aux pratiquants confirmés ?</summary>
+                    <p>Non, la plupart des stages sont ouverts à tous les niveaux. N'hésitez pas à demander conseil à vos enseignants avant de vous inscrire.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Faut-il être licencié pour participer à un stage ?</summary>
+                    <p>Oui, une licence FAT en cours de validité est généralement demandée pour participer aux stages, y compris ceux organisés par d'autres clubs.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Comment être informé des prochains stages ?</summary>
+                    <p>Les enseignants du club communiquent les dates directement sur le tatami ou vous référer au calendrier ci-dessus.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="join-cta">
+            <div class="cta-card">
+                <div class="cta-text">
+                    <p class="eyebrow-light">Rejoignez-nous</p>
+                    <h2>Envie de participer à un prochain stage ?</h2>
+                    <p>Contactez-nous pour connaître les dates et modalités d'inscription.</p>
+                </div>
+                <div class="button-group">
+                    <a class="btn-primary" href="contact.html">Nous contacter →</a>
+                    <a class="btn-ghost" href="infos-pratiques.html">Infos pratiques</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-brand">
+                <h3>Aïkido · Mignovillard</h3>
+                <p>Club affilié à la Fédération d'Aïkido Traditionnelle (FAT). Fondé en 2018 sur le Plateau de Nozeroy, nous accueillons adolescents et adultes dès 12 ans dans une pratique authentique et bienveillante de l'aïkido.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html" class="tlink">Accueil</a>
+                <a href="a-propos.html" class="tlink">À propos</a>
+                <a href="philosophie.html" class="tlink">Philosophie</a>
+                <a href="enseignants.html" class="tlink">Enseignants</a>
+                <a href="stages.html" class="tlink">Stages</a>
+                <a href="infos-pratiques.html" class="tlink">Infos pratiques</a>
+                <a href="contact.html" class="tlink">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>aikido.migno@gmail.com</p>
+                <p>9 bis Rue du Processionnal, 39250 Mignovillard</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Aïkido Club de Mignovillard</p>
+            <div class="footer-legal">
+                <a href="mentions-legales.html" class="tlink">Mentions légales</a>
+                <a href="cgu.html" class="tlink">CGU</a>
+                <a href="politique-confidentialite.html" class="tlink">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Aïkido Club de Mignovillard</title>
+    <meta name="description" content="Aïkido Club de Mignovillard — cours d'aïkido dans le Jura, dès 12 ans, débutants bienvenus, deux séances d'essai gratuites.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo_petit.jpeg" alt="Aïkido Club de Mignovillard"></a>
+        <button class="burger" id="burger-btn" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <a href="a-propos.html">À propos</a>
+            <a href="philosophie.html">Philosophie</a>
+            <a href="enseignants.html">Enseignants</a>
+            <a href="stages.html">Stages</a>
+            <a href="infos-pratiques.html">Infos pratiques</a>
+            <a href="contact.html" class="btn-primary active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-hero">
+            <div class="section-header">
+                <p class="eyebrow-dark">Contact</p>
+                <h1>Une question ? Envie d'essayer ? Écrivez-nous.</h1>
+                <p>On vous répond avec plaisir, généralement sous 48h. Vous pouvez aussi passer directement au dojo un soir de cours.</p>
+            </div>
+        </section>
+
+        <section id="contact-layout">
+            <div class="contact-grid">
+                <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Clé gratuite à récupérer sur https://web3forms.com/ (voir instructions fournies) -->
+                    <input type="hidden" name="access_key" value="a23d1fd6-c14a-47c5-848a-020bf2a1ddaf">
+                    <input type="hidden" name="subject" value="Nouveau message depuis le site du club">
+                    <input type="hidden" name="from_name" value="Site Aïkido Club de Mignovillard">
+                    <input type="checkbox" name="botcheck" class="hidden-field" style="display: none;" tabindex="-1" autocomplete="off">
+                    <div class="form-row">
+                        <label for="name">Nom et prénom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Téléphone (facultatif)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message, vos questions..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer le message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <p class="card-icon">✉</p>
+                        <h3>E-mail</h3>
+                        <p><a class="tlink-dark" href="mailto:aikido.migno@gmail.com">aikido.migno@gmail.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <p class="card-icon">📍</p>
+                        <h3>Adresse</h3>
+                        <p>9 bis Rue du Processionnal<br>39250 Mignovillard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join-cta">
+            <div class="cta-card">
+                <div class="cta-text">
+                    <p class="eyebrow-light">Rejoignez-nous</p>
+                    <h2>Deux séances d'essai gratuites vous attendent.</h2>
+                    <p>Passez directement au dojo un soir de cours, sans rendez-vous.</p>
+                </div>
+                <div class="button-group">
+                    <a class="btn-primary" href="infos-pratiques.html">Voir les horaires →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-brand">
+                <h3>Aïkido · Mignovillard</h3>
+                <p>Club affilié à la Fédération d'Aïkido Traditionnelle (FAT). Fondé en 2018 sur le Plateau de Nozeroy, nous accueillons adolescents et adultes dès 12 ans dans une pratique authentique et bienveillante de l'aïkido.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <a href="index.html" class="tlink">Accueil</a>
+                <a href="a-propos.html" class="tlink">À propos</a>
+                <a href="philosophie.html" class="tlink">Philosophie</a>
+                <a href="enseignants.html" class="tlink">Enseignants</a>
+                <a href="stages.html" class="tlink">Stages</a>
+                <a href="infos-pratiques.html" class="tlink">Infos pratiques</a>
+                <a href="contact.html" class="tlink">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>aikido.migno@gmail.com</p>
+                <p>9 bis Rue du Processionnal, 39250 Mignovillard</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Aïkido Club de Mignovillard</p>
+            <div class="footer-legal">
+                <a href="mentions-legales.html" class="tlink">Mentions légales</a>
+                <a href="cgu.html" class="tlink">CGU</a>
+                <a href="politique-confidentialite.html" class="tlink">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
